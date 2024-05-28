@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        body {
+            background-color: #1D100E;
+            color: #cc5027;
+        }
+
+        h2 {
+            color: #cc5027;
+        }
+
+        p {
+            color: #cc5027;
+        }
+
+        li {
+            color: #cc5027;
+        }
+
+        .inner-page-title h2 {
+            color: #fff;
+        }
+
+        .navbar-header,
+        .navbar-collapse {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            background-color: #1D100E;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-fixed {
+            background-color: #fff; /* Background color when scrolled */
+        }
+
+
+
+        .nav {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+            .nav > li {
+                list-style: none;
+            }
+
+                .nav > li > a {
+                    color: #fff !important;
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    display: inline-block;
+                }
+
+        .navbar-fixed .nav > li > a {
+            color: #333 !important; /* Text color when navbar has background */
+        }
+
+        .nav > li > a:hover {
+            background-color: #cc5027;
+        }
+
+        .body-content {
+            padding-top: 0px; /* Adjustingg padding-top to ensure content is not hidden behind navbar */
+        }
+
+        footer {
+            background-color: #1D100E;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .center-text h2, .center-text p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            form input {
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 80%;
+                max-width: 400px;
+            }
+
+            form button {
+                padding: 10px 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+        .navigation-bar {
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .nav-links li {
+                margin: 0 10px;
+            }
+
+                .nav-links li a {
+                    text-decoration: none;
+                }
+
+                    .nav-links li a:hover {
+                        text-decoration: underline;
+                    }
+
+        .footer-info {
+            background-color: black;
+            padding: 20px;
+            color: white;
+        }
+
+            .footer-info p {
+                margin: 5px 0;
+            }
+
+            .footer-info span {
+                color: red;
+            }
+    </style>
+</head>
+<body>
+    `        <div class="container-fluid">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="@Url.Action("Index", "Home")">
+
+                        <img src="~/Content/Images/LOGO TEXT.png" )" alt="Site Logo" style="max-width: 150px; max-height: 120px; margin-top: 5px;" />
+                    </a>
+                </li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Menu", "Index", "MenuItems")</li>
+                <li>@Html.ActionLink("Reservation", "Create", "Bookings")</li>
+                <li>@Html.ActionLink("About us", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact us", "Create", "ContactViewModels")</li>
+                <li>@Html.ActionLink("Staff Login", "StaffLogin", "Home")</li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        @Html.ActionLink("Home", "Index", "Staffs", new { @class = "nav-link" })
+                    </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Add new", "Create", "Users", new { @class = "nav-link" })
+                    </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Welcome  " + @User.Identity.Name, "", "", new { @class = "nav-link" })
+                    </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Logout", "Logout", "Account", new { @class = "nav-link" })
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        @Html.ActionLink("Login", "Login", "Account", new { @class = "nav-link" })
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="body-content">
+        @RenderBody()
+        <footer class="footer-container">
+            <div class="footer-info">
+                <div class="center-text">
+                    <h2>STAY CONNECTED WITH HIMALAYAN</h2>
+                    <p>Sign up to be the first to receive special news and event updates from HIMALAYAN</p>
+                    <form action="URL where form data should be sent" method="POST">
+                        <input type="email" placeholder="Email Address" name="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="navigation-bar">
+                        <ul class="nav-links">
+                            <li><a href="~/MenuItems/Index/Index.cshtml">Menu</a></li>
+                            <li><a href="~/Bookings/Create/Create.cshtml">Reservation</a></li>
+                            <li><a href="~/Home/About/About.cshtml">About us</a></li>
+                            <li><a href="~/ContactViewModels/Create/Index.cshtml">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <p><span>&#128205;</span> 22 Sheffield St, Auburn NSW 2144</p>
+                    <p><span>&#128222;</span> (02) 8677 522842</p>
+                    <p>
+                        Copyright © 2024 - Himalayan Nepalese Cuisine
+                        All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar-collapse');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 0) {
+                    navbar.classList.add('navbar-fixed');
+                } else {
+                    navbar.classList.remove('navbar-fixed');
+                }
+            });
+        });</script>
+</body>
+</html>

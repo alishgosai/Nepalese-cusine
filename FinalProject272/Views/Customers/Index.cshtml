@@ -1,0 +1,26 @@
+﻿@model IEnumerable<FinalProject272.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<section class="inner-page-banner" style="background-image: url('@Url.Content("~/Content/Images/357423943_282549174284517_7132062271716028709_n.jpg")');">
+    <link rel="stylesheet" href="~/Content/about.css" />
+    <div class="container">
+        <div class="inner-page-title">
+            <div class="main-title">
+                <h1 style="color: #fff; text-align: center; justify-content: center; font-size: 50px;">Welcome to Himalayan Nepalese Cuisine</h1>
+            </div>
+            <div class="container text-center">
+                <h2 style="color: #fff; text-align: center; justify-content: center;"> Click the below button to discover our delicious food!</h2>
+
+
+            </div>
+            @Html.ActionLink("View Menu", "Index", "MenuItems") 
+        </div>
+        </div>
+</section>
+<img src="~/Content/Images/Women_setup.jpg" style="width: 100%; height: auto;  padding: 50px 50px;"   />
+
+

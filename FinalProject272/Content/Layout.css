@@ -1,0 +1,145 @@
+﻿body {
+    background-color: #1D100E;
+    color: #cc5027;
+}
+
+h2 {
+    color: #cc5027;
+}
+
+p {
+    color: #cc5027;
+}
+
+li {
+    color: #cc5027;
+}
+
+.inner-page-title h2 {
+    color: #fff;
+}
+
+.navbar-header,
+.navbar-collapse {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-fixed {
+    background-color: #fff; /* Background color when scrolled */
+}
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+    .nav > li {
+        list-style: none;
+    }
+
+        .nav > li > a {
+            color: #fff !important;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+.navbar-fixed .nav > li > a {
+    color: #333 !important; /* Text color when navbar has background */
+}
+
+.nav > li > a:hover {
+    background-color: #cc5027;
+}
+
+.body-content {
+    padding-top: 0px; /* Adjustingg padding-top to ensure content is not hidden behind navbar */
+}
+
+footer {
+    background-color: #1D100E;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center-text h2, .center-text p {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+.navigation-bar {
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+        .nav-links li a {
+            text-decoration: none;
+        }
+
+            .nav-links li a:hover {
+                text-decoration: underline;
+            }
+
+.footer-info {
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+    .footer-info p {
+        margin: 5px 0;
+    }
+
+    .footer-info span {
+        color: red;
+    }

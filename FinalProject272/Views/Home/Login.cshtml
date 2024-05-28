@@ -1,0 +1,38 @@
+﻿@model FinalProject272.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm())
+{
+
+
+    <br />
+    <br />
+    <br/>
+    @Html.AntiForgeryToken()
+<div class="card custom-card">
+    <div class="card-header bg-black text-white text-center">
+        <h3>Login Form</h3>
+    </div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="card-body">
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="form-group" style="color: #cc5027;">
+            <button type="submit" class="btn btn #cc5027; rounded-0">Login</button>
+        
+            @Html.ActionLink("New User", "Register", new { style = "color: #cc5027;" }) 
+        </div>
+
+    </div>
+</div>
+}  

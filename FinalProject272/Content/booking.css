@@ -1,0 +1,157 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1D100E;
+    color: #cc5027;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #cc5027;
+}
+
+.inner-page-banner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.inner-page-title {
+    text-align: center;
+}
+
+label {
+    color: #cc5027; /* change the text color to black */
+    font-size: 16px; /* adjust the font size to your liking */
+    font-weight: bold; /* make the text bold */
+}
+
+
+.form-horizontal {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+    .form-control:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%; /* Make the input boxes span the full width */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Round the corners */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-bottom: 10px; /* Add some spacing */
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+    .checkbox input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+
+.control-label.col-md-2 {
+    text-align: right;
+}
+
+.col-md-10 {
+    padding-left: 30px; /* To ensure some space between label and input */
+}
+
+
+
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+
+
+.checkbox input[type="checkbox"] {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+}
+
+.text-danger {
+    color: #ff0000;
+}
+
+button,
+input[type="submit"] {
+    background-color: #4CAF50; /* Example green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+
+.btn-green {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    .btn-green:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }

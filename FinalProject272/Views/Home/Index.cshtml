@@ -1,0 +1,193 @@
+﻿@{ ViewBag.Title = "Home Page"; }
+
+
+
+@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="stylesheet" href="~/Content/home.css"/>
+</head>
+<body>
+
+    <section class="inner-page-banner" style="background-image: url('@Url.Content("~/Content/Images/Cuisine (2).jpg")'); height: 100vh; margin: 0; padding: 0;">
+        <div class="container-fluid" style="padding: 0px; margin: 0px">
+            <div class="inner-page-title">
+                <div class="main-title">
+                    <h2 style="color: #fff;">The Himalayan Nepalese Cuisine</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="about-section section-gaps">
+        <div class="container">
+            <div class="about-info">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+
+
+
+                        <div class="text">
+                            <div class="position-relative color-title">
+                                <div class="main-title">
+                                    <h2>Student Details							</h2>
+                                </div>
+                                <p>
+                                    We are Four Students working together to develop asp.net MVC Application.
+                                    <br />
+                                    These are our Names, StudentID and Email.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <table class="customTable">
+                                <thead>
+                                    <tr>
+                                        <th>Student Name</th>
+                                        <th>Student ID </th>
+                                        <th>Student Email </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Suman Bamjan</td>
+                                        <td>12203216</td>
+                                        <td>12203216@students.koi.edu.au</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bishnu Balampaki Magar</td>
+                                        <td>12202333</td>
+                                        <td>12202333@students.koi.edu.au</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alish Gosai</td>
+                                        <td>12202611</td>
+                                        <td>12202611@students.koi.edu.au</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prakiti Khanal</td>
+                                        <td>12202610</td>
+                                        <td>12202610@students.koi.edu.au</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="menu-page-banner" style="background-image: url('@Url.Content("~/Content/Images/357423943_282549174284517_7132062271716028709_n.jpg")');">
+        <div class="container">
+            <div class="inner-page-title">
+                <div class="main-title">
+                    <h2>Menu</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*About us page*@
+
+
+    <section class="about-page-banner" style="background-image: url('@Url.Content("~/Content/Images/setup.jpg")');">
+
+        <div class="container">
+            <div class="inner-page-title">
+                <div class="main-title">
+                    <h2>About Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section section-gaps">
+        <div class="container">
+            <div class="about-info">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="position-relative color-title">
+                            <div class="main-title">
+                                <h2>We have Started Our Journey to serve you from 2024							</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <p>
+                                Since our establishment in 2024, we've embarked on a remarkable journey committed to serving our esteemed patrons with the authentic flavors of Nepal. With an unwavering dedication to excellence, we've swiftly emerged as a prominent name in the culinary landscape. Today, we proudly stand as a beacon of Himalayan cuisine, ready to cater to your palate with unparalleled expertise and passion.
+
+                                <br />
+                                From our modest beginnings, we've understood the significance of fostering strong connections with our customers. We recognize that trust and loyalty are the foundational pillars upon which successful ventures are built.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @*Contact us page and form*@
+    <section class="about-section section-gaps">
+        <div class="container">
+            <div class="about-info">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <div class="position-relative color-title">
+                                <div class="main-title">
+                                    <h2>Get in Touch</h2>
+                                </div>
+                                <p>
+                                    We'd love to hear from you! Whether you have a question, comment, or feedback, please don't hesitate to reach out.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>Address:</span>
+                                        <span>22 Sheffield St, Auburn NSW 2144</span>
+                                    </li>
+                                    <li>
+                                        <span>Phone:</span>
+                                        <span>(02) 8677 522842</span>
+                                    </li>
+                                    <li>
+                                        <span>Email:</span>
+                                        <span>himalayannepalese@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <div class="col-lg-6">
+                                <div class="text">
+                                    <img src="~/Content/Images/Women_setup.jpg" style="max-width: 500px; max-height: 800px;" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

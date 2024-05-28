@@ -1,0 +1,339 @@
+﻿<style>
+    .inner-page-banner {
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .inner-page-title {
+        text-align: center;
+    }
+
+    .main-title h2 {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .bed-crumbs ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .bed-crumbs li {
+        margin-right: 10px;
+    }
+
+    .bed-crumbs a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .about-section {
+        padding: 100px 0;
+    }
+
+    .about-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .color-title {
+        color: #333;
+    }
+
+    .main-title h2 {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .text p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px); /* Adjust width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e86411;
+}
+p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e86411;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e86411;
+}
+
+.menu-item {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item-price {
+        margin-left: auto;
+    }
+
+</style>
+
+
+
+<section class="inner-page-banner" style="background-image: url('@Url.Content("~/Content/Images/Wine_Setup.jpg")');">
+    <div class="container">
+        <div class="inner-page-title">
+            <div class="main-title">
+                <h2>Menu</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="menu">
+        <div class="menu-section">
+            <h1>Lunch Specials - $17.50</h1>
+            <p>Monday - Sunday | 11am - 3pm<br>Everyday</p>
+            <div class="item">Daal Bhat Tarkari Achar <span class="item-price">$17.50</span></div>
+            <div class="item">Chips or Chicken Chili With Rice <span class="item-price">$17.50</span></div>
+            <div class="item">Chicken Tikka, Seekh Kabab & Naan <span class="item-price">$17.50</span></div>
+            <div class="item">Vatmas, Chiura, Choila, Achar <span class="item-price">$17.50</span></div>
+            <div class="item">Butter Chicken & Rice <span class="item-price">$17.50</span></div>
+            <div class="item">Lunch Mo:Mo: Platter Chic/Veg (12Pcs) <span class="item-price">$17.50</span></div>
+        </div>
+
+        <div class="menu-section">
+            <h1>Veg Starters</h1>
+            <div class="image-container">
+                <img src="~/Content/MenuImage/samosa.png" alt="samosa" style="width: 100px; height: 100px;" />
+                <img src="~/Content/MenuImage/panipuri.png" alt="panipuri" style="width: 100px; height: 100px;" />
+                <img src="~/Content/MenuImage/chatpate.png" alt="chatpate" style="width: 100px; height: 100px;" />
+                <img src="~/Content/MenuImage/paneer.png" alt="paneer" style="width: 100px; height: 100px;" />
+            </div>
+            <div class="item">Chatpate<br>(hot and spicy) <span class="item-price">$12.99</span></div>
+            <div class="item">Pani puri<br>(8 balls, mixture of tasty spicy) <span class="item-price">$12.99</span></div>
+            <div class="item">Veg samosa <span class="item-price">$14.99</span></div>
+            <div class="item">Paneer pakooda<br>(Home made paneer and mix masala) <span class="item-price">$16.99</span></div>
+            <div class="item">Veg Khaja set<br>(pakoda, aalu aachar, samosa, salad) <span class="item-price">$20.99</span></div>
+        </div>
+
+
+
+
+
+        <div class="menu-section">
+            <!-- Non-Veg Starters -->
+            <h1>Non-Veg Starters</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/choila.png" alt="choila" style="width: 200px; height: 200px;" />
+                <img src="~/Content/MenuImage/choila2.png" alt="choila2" style="width: 200px; height: 200px;" />
+            </div>
+            <!-- Items -->
+            <div class="item"><h2>Choila set</h2></div>
+            <div class="menu-item">Chicken or Goat or Buff</div>
+            <div class="item-price">$18 or $19 or $20</div>
+
+            <div class="item"><h2>Sukuti set</h2></div>
+            <div class="menu-item">Chicken or Goat or Buff</div>
+            <div class="item-price">$20 or $25 or $30</div>
+
+            <div class="item"><h2>Newari khaja set</h2></div>
+            <p>(Set Available)</p>
+            <div class="menu-item">Chicken or Goat or Buff or Pork</div>
+            <div class="item-price">$25 or $28 or $30 or $35</div>
+
+            <div class="item"><h2>Chicken tandori sizller<br>Half or Full</h2></div>
+            <div class="item-price">$20 or $40</div>
+
+            <div class="item"><h2>Nepali style fried rice</h2></div>
+            <div class="menu-item">Half or Full</div>
+            <div class="item-price">$15 or $30</div>
+        </div>
+
+        <div class="menu-section">
+            <!-- Biryani -->
+            <h1>Biryani</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/biryani1.png" alt="biryani" style="width: 200px; height: 200px;" />
+                <img src="~/Content/MenuImage/biryani.png" alt="biryani1" style="width: 200px; height: 200px;" />
+            </div>
+            <!-- Items -->
+            <div class="item">Vegetable or chicken</div>
+            <div class="item-price">$20 or $30</div>
+            <div class="item">Lamb or goat or pork</div>
+            <div class="item-price">$25 or $30 or $40</div>
+
+            <!-- Nepalese Chowmein -->
+            <h1>Nepalese Chowmein</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/chowmein.png" alt="Chowmein" style="width: 200px; height: 200px;" />
+                <img src="~/Content/MenuImage/c2.png" alt="Chowmein" style="width: 200px; height: 200px;" />
+            </div>
+            <!-- Items -->
+            <div class="item">Chicken or Veg or Pork or Buff</div>
+            <div class="item-price">$20 or $15 or $25 or $22</div>
+        </div>
+        <div class="menu-section">
+            <!-- Nepalese MO:MO (Dumplings) -->
+            <h1>Nepalese MO:MO (Dumplings)</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/mo.png" alt="Momo" style="width: 200px; height: 200px;" />
+                <img src="~/Content/MenuImage/m2.png" alt="Momo" style="width: 200px; height: 200px;" />
+            </div>
+            <!-- Items -->
+            <div class="item"><h2>Steam MO:MO</h2></div>
+            <div class="menu-item">Chicken or Veg or Pork or Buff</div>
+            <div class="item-price">$20 or $15 or $25 or $22</div>
+
+            <div class="item"><h2>Jhol MO:MO</h2></div>
+            <div class="menu-item">Chicken or Veg or Pork or Buff</div>
+            <div class="item-price">$20 or $15 or $25 or $22</div>
+
+            <div class="item"><h2>Fried MO:MO</h2></div>
+            <div class="menu-item">Chicken or Veg or Pork or Buff</div>
+            <div class="item-price">$20 or $15 or $25 or $22</div>
+
+            <div class="item"><h2>MO:MO Platter</h2></div>
+            <div class="menu-item">Combination of Buff or Pork or Veg or Chicken</div>
+            <div class="item-price">$50</div>
+        </div>
+
+        <div class="menu-section">
+            <!-- Thali Special -->
+            <h1>Thali Special</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/thali1.png" alt="Thali" style="width: 200px; height: 200px;" />
+            </div>
+            <!-- Items -->
+            <div class="item"><h2>Nepali Bhat</h2></div>
+            <div class="menu-item">Chicken or Veg or Pork or Buff</div>
+            <div class="item-price">$25 or $15 or $30 or $20</div>
+
+            <div class="item"><h2>Gundruk and Dhido</h2></div>
+            <div class="menu-item">Chicken or Goat or Buff</div>
+            <div class="item-price">$25 or $35 or $30</div>
+        </div>
+
+        <div class="menu-section">
+            <!-- Drinks -->
+            <h1>Drinks</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/Drinks.png" alt="Drinks" style="width: 300px; height: 300px;" />
+            </div>
+            <!-- Items -->
+            <div class="item">Lassi<br>(Mango/Watermelon/Plain/Mixed)</div>
+            <div class="item-price">$10</div>
+
+            <div class="item">(Coke/Sprite/Fanta/Pepsi/Dew)</div>
+            <div class="item-price">$12</div>
+
+            <div class="item">Juice<br>(Mango/Orange/Banana/Pineapple)</div>
+            <div class="item-price">$7.99</div>
+
+            <div class="item">Masala Chai</div>
+            <div class="item-price">$4.99</div>
+        </div>
+
+        <div class="menu-section">
+            <!-- Dessert & Salads -->
+            <h1>Dessert & Salads</h1>
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="~/Content/MenuImage/Gulab.png" alt="Gulab" style="width: 150px; height: 150px;" />
+                <img src="~/Content/MenuImage/ice.png" alt="ice" style="width: 150px; height: 150px; " />
+                <img src="~/Content/MenuImage/salad.png" alt="salad" style="width: 150px; height: 150px; " />
+            </div>
+            <!-- Items -->
+            <div class="item">Gulab Jamun With Yogurt</div>
+            <div class="item-price">$8</div>
+
+            <div class="item">Rasmalai</div>
+            <div class="item-price">$10</div>
+
+            <div class="item">Ice-cream With Topping</div>
+            <div class="item-price">$8</div>
+
+            <div class="item">Green Salad</div>
+            <div class="item-price">$5.99</div>
+        </div>
+
+    </div>
+</div>
